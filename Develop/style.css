@@ -28,12 +28,18 @@ textarea{
 .time-block{
   text-align: center;
   border-radius: 15px;
+  /*added by me 
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;*/
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  /* border-top: 1px solid white;; */
+  /*my added style*/
+  border: 1px solid black;
 }
 
 .hour {
@@ -69,3 +75,11 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+/*added*/
+.time {
+  text-align: right;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+} 
