@@ -6,27 +6,47 @@
 
 //add current day on top of the page
 //ADD TIME TICKING???
-var firstRowEl = document.getElementById("9am");
+//var firstRowEl = document.getElementById("9am");
+var firstRowEl = document.getElementById("9");
+var eventEl = document.getElementsByClassName("event");
+
 
 var today = moment().format('MMMM Do YYYY, h:mm a');
-var currentTime = moment().format('ha');
+var currentTime = moment().hours();
 $('#currentDay').append(today);
 
 console.log(currentTime);
 
-function changeColor() {
-    firstRowEl = '9am';
-    
-    if (currentTime >= firstRowEl){
-        $("list-item").addClass("present");
-        
+$(".row").each(function () {
+
+    if ($(this).attr('id') === currentTime){
+       
+        $('#list-item').addClass("present");
     }
     else {
-        $("list-item").addClass("future");
-    };
+        
+        $('#list-item').addClass("future");
+    }
+    console.log($(this).attr('id'))
+});
+
+// function changeColor() {
+//     firstRowEl.id = '9am';
+
+//     $(".row").each(function(){
+//         console.log($(this).attr('id'))
+//     })
+    
+//     if (currentTime >= firstRowEl.id){
+//         $("list-item").addClass("present");
+        
+//     }
+//     else {
+//         $("list-item").addClass("future");
+//     };
 
 
 
-}
-console.log(firstRowEl);
-changeColor();
+// }
+// console.log(firstRowEl);
+// changeColor();
