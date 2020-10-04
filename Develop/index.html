@@ -21,8 +21,8 @@
     <script 
     src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
     ></script>
-    <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Oganize Your Work Day!!</title>
   </head>
 
   <body>
@@ -32,118 +32,101 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+
+      <!-- Row for 9am block -->
       <div class="row" id="9">
         <div class="col-1 hour">
-          <span>9AN</span>
+          <span>9AM</span>
         </div>
-        
           <textarea class="col-10 event" id="list-item"></textarea>
-          
         <div class="col-1 icon">
           <button type="button" class="saveBtn " id="save-item"><i class="far fa-save"></i></button>
         </div>
       </div>
 
+      <!-- Row for 10am block -->
       <div class="row" id="10">
-        <div class="col-1">
-          <span class="hour">10am</span>
+        <div class="col-1 hour">
+          <span>10AM</span>
         </div>
-        <!-- <div class="col-10"> -->
           <textarea class="col-10 event" id="list-item"></textarea>
-          <!-- <textarea id="event" type="text" class="input-lg"/> -->
-        <!-- </div> -->
         <div class="col-1 m-0 p-0 icon" >
           <button type="button" class="saveBtn w-100 h-100 mb-2" id="save-item"><i class="far fa-save"></i></button>
         </div>
       </div>
 
+      <!-- Row for 11am block -->
       <div class="row" id="11">
-        <div class="col-1">
-          <span class="hour">11am</span>
+        <div class="col-1 hour">
+          <span>11AM</span>
         </div>
-        <!-- <div class="col-10"> -->
           <textarea class="col-10 event" id="list-item"></textarea>
-          <!-- <textarea id="event" type="text" class="input-lg"/> -->
-        <!-- </div> -->
         <div class="col-1 icon">
           <button type="button" class="saveBtn" id="save-item"><i class="far fa-save"></i></button>
         </div>
       </div>
 
+      <!-- Row for 12pm block -->
       <div class="row" id="12">
-        <div class="col-1">
-          <span class="hour">12pm</span>
+        <div class="col-1 hour">
+          <span>12PM</span>
         </div>
-        <!-- <div class="col-10"> -->
           <textarea class="col-10 event" id="list-item"></textarea>
-          <!-- <textarea id="event" type="text" class="input-lg"/> -->
-        <!-- </div> -->
         <div class="col-1 icon">
           <button type="button" class="saveBtn" id="save-item"><i class="far fa-save"></i></button>
         </div>
       </div>
 
+      <!-- Row for 1pm block -->
       <div class="row" id="13">
         <div class="col-1">
-          <span class="hour">1pm</span>
+          <span>1PM</span>
         </div>
-        <!-- <div class="col-10"> -->
           <textarea class="col-10 event" id="list-item"></textarea>
-          <!-- <textarea id="event" type="text" class="input-lg"/> -->
-        <!-- </div> -->
         <div class="col-1 icon">
           <button type="button" class="saveBtn" id="save-item"><i class="far fa-save"></i></button>
         </div>
       </div>
 
+      <!-- Row for 2pm block -->
       <div class="row" id="14">
         <div class="col-1">
-          <span class="hour">2pm</span>
+          <span>2PM</span>
         </div>
-        <!-- <div class="col-10"> -->
           <textarea class="col-10 event" id="list-item"></textarea>
-          <!-- <textarea id="event" type="text" class="input-lg"/> -->
-        <!-- </div> -->
         <div class="col-1 icon">
           <button type="button" class="saveBtn" id="save-item"><i class="far fa-save"></i></button>
         </div>
       </div>
 
+      <!-- Row for 3pm block -->
       <div class="row" id="15">
         <div class="col-1">
-          <span class="hour">3pm</span>
+          <span>3PM</span>
         </div>
-        <!-- <div class="col-10"> -->
           <textarea class="col-10 event" id="list-item"></textarea>
-          <!-- <textarea id="event" type="text" class="input-lg"/> -->
-        <!-- </div> -->
         <div class="col-1 icon" >
           <button type="button" class="saveBtn" id="save-item"><i class="far fa-save"></i></button>
         </div>
       </div>
 
+      <!-- Row for 4pm block -->
       <div class="row" id="16">
         <div class="col-1">
-          <span class="hour">4pm</span>
+          <span>4PM</span>
         </div>
-        <!-- <div class="col-10"> -->
           <textarea class="col-10 event" id="list-item"></textarea>
-          <!-- <textarea id="event" type="text" class="input-lg"/> -->
-        <!-- </div> -->
         <div class="col-1 icon">
           <button type="button" class="saveBtn" id="save-item"><i class="far fa-save"></i></button>
         </div>
       </div>
 
+      <!-- Row for 5pm block -->
       <div class="row" id="17">
         <div class="col-1">
-          <span class="hour">5pm</span>
+          <span>5PM</span>
         </div>
-        <!-- <div class="col-10"> -->
           <textarea class="col-10 event" id="list-item"></textarea>
-          <!-- <textarea id="event" type="text" class="input-lg"/> -->
-        <!-- </div> -->
         <div class="col-1 icon">
           <button type="button" class="saveBtn" id="save-item"><i class="far fa-save"></i></button>
         </div>
@@ -153,6 +136,6 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="workday.js"></script>
+    <script src="./workday.js"></script>
   </body>
 </html>
