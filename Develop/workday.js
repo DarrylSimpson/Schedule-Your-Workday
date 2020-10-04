@@ -35,17 +35,28 @@ function displayText(text) {
     }
 };
 
-$('#save-item').on('click', function() {
+$('.saveBtn').on('click', function() {
+    //console.log("save btn is clicked");
+    console.log($(this))
 
-    var userInputToDo = $('#list-item')
-    .val()
-    .trim();
+    // var userInputToDo = $(this)
+    //  .val()
+    //  .trim();
+    // var textValue = $(this).siblings("#list-item").val();
+    // console.log("textValue : ", textValue);
+    // var time = $(this).parent().attr("id");
+    // console.log("time: ", time);
 
-    text.push(userInputToDo);
+    $(this).parent().siblings("textarea")
+    .text();
+
+    //text.push(userInputToDo);
 
     displayText(text);
 
     localStorage.setItem('todo', JSON.stringify(text));
 });
+
+//$(this).parent()
 
 displayText(text);
