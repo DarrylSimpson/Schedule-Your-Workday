@@ -25,9 +25,9 @@
 
 ## Images of My Page
 
-![ScreenShot1of4](Develop/images/image01.png)
-![ScreenShot2of4](Develop/images/image02.png)
-![ScreenShot3of4](Develop/images/image03.png)
+![ScreenShot1of4](Assets/images/image01.png)
+![ScreenShot2of4](Assets/images/image02.png)
+![ScreenShot3of4](Assets/images/image03.png)
 
 
 
