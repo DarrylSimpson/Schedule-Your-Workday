@@ -5,8 +5,6 @@ var today = moment().format('MMMM Do YYYY, h:mm a');
 var currentTime = moment().hours();
 $('#currentDay').append(today);
 
-var text = JSON.parse(localStorage.getItem('todo')) || [];
-
 
 //Based on the current time, the rows will change color to represent past, present, and future events
 $(".row").each(function () {
@@ -24,39 +22,26 @@ $(".row").each(function () {
 
         $(this).find("textarea").addClass("future");
     }
+
+    var storageId = $(this).attr('id');
+    var storedText = JSON.parse(localStorage.getItem(storageId));
+    console.log(storedText);
+    $(this).find('textarea').val(storedText);
 });
 
-function displayText(text) {
-    $('#list-item').empty();
-
-    for (var i = 0; i < text.length; i++) {
-        var textItem = $('<textarea>');
-        textItem.text(text[i]);
-    }
-};
 
 $('.saveBtn').on('click', function() {
     //console.log("save btn is clicked");
     console.log($(this))
 
-    // var userInputToDo = $(this)
-    //  .val()
-    //  .trim();
-    // var textValue = $(this).siblings("#list-item").val();
-    // console.log("textValue : ", textValue);
-    // var time = $(this).parent().attr("id");
-    // console.log("time: ", time);
 
-    $(this).parent().siblings("textarea")
-    .text();
+    var newText = $(this).parent().siblings("textarea").val()
+    var locationId = $(this).parent().parent().attr('id');
 
-    //text.push(userInputToDo);
+    console.log(newText)
+    console.log(locationId);
 
-    displayText(text);
 
-    localStorage.setItem('todo', JSON.stringify(text));
+    localStorage.setItem(locationId, JSON.stringify(newText));
 });
 
-//$(this).parent()
-
-displayText(text);
